@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.presentation{
+    font-family: vars.$QuickSand;
+    min-height: 100vh;
+    .name{
+        padding: 10rem 0 4rem;
+        font-size: 6rem;
+    }
+    .socialMedia-icons{
+        .icon{
+            margin:1rem;
+        }
+    }
+}

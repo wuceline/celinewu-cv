@@ -1,9 +1,9 @@
 import { Menu } from 'react-feather';
-// import './styles.scss';
+import './styles.scss';
 
 const DropdownMain = () => (
   <div className="dropdown-main">
-    <Menu />
+    <Menu size={40} />
   </div>
 );
 
