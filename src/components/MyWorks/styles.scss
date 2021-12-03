@@ -1,0 +1,33 @@
+@use 'src/styles/vars';
+
+.my-works{
+    text-align: center;
+    margin-bottom: 10em;
+
+    .title{
+        font-family: vars.$Syncopate;
+        text-align: left;
+        margin: 3em 0 3em 2em;
+        font-size: 1em;
+        text-decoration: underline;
+    }
+
+    .work-div{
+        margin:auto;
+        width: 80%;
+        @media only screen and (min-width:768px){
+            width:50%;
+        }
+        @media only screen and (min-width:1024px){
+            width:30%;
+            margin: 0 10em;
+        }
+        .work-link{
+            font-size: 1.3em;
+        }
+        .work-description{
+            font-size:0.8em;
+            padding:0.8em;
+        }
+    }
+}
