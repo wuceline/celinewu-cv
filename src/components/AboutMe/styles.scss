@@ -15,6 +15,10 @@
         line-height: 1.3em;
     }
     .cv-link{
+        display: block;
+        font-family: vars.$Syncopate;
         text-align: right;
+        text-decoration: underline;
+        margin: 2em 2em 8em 0;
     }
 }

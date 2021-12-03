@@ -25,7 +25,7 @@ const AboutMe = () => (
       Incididunt commodo quis ad quis aliquip culpa
       culpa do irure sunt cupidatat. Eu irure occaecat quis non eu reprehenderit.
     </p>
-    <a href="#" className="cv-link">
+    <a href="/" className="cv-link">
       Mon CV
     </a>
   </div>
