@@ -1,24 +1,32 @@
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import IconComponent from './iconComponent';
+import projects from './projects';
 import './styles.scss';
 
 const MyWorks = () => (
   <div className="my-works">
     <h1 className="title">My work</h1>
-    <div className="work-div">
-      <a href="http://keskonmate.surge.sh/" className="work-link" target="_blank" rel="noreferrer">
-        Keskonmate
-      </a>
-      <p className="work-description">
-        Minim minim proident sint in officia occaecat nostrud est qui minim ullamco anim.
-      </p>
-    </div>
-    <div className="work-div">
-      <a href="http://keskonmate.surge.sh/" className="work-link" target="_blank" rel="noreferrer">
-        Keskonmate
-      </a>
-      <p className="work-description">
-        Minim minim proident sint in officia occaecat nostrud est qui minim ullamco anim.
-      </p>
-    </div>
+    <VerticalTimeline>
+      {projects.map((element) => (
+        <VerticalTimelineElement
+          key={element.id}
+          date={element.date}
+          dateClassName="date"
+          icon={<IconComponent />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            {element.title}
+          </h3>
+          <p id="description">
+            {element.description}
+          </p>
+          <a href="/" className="button">
+            {element.buttonText}
+          </a>
+        </VerticalTimelineElement>
+      ))}
+    </VerticalTimeline>
   </div>
 );
 
