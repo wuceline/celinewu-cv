@@ -1,5 +1,5 @@
 // == Import
-import Navbar from '../Navbar';
+import Navbar from 'src/containers/Navbar';
 import Presentation from '../Presentation';
 import AboutMe from '../AboutMe';
 import Technologies from '../Technologies';
