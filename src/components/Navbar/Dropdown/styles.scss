@@ -1,4 +1,18 @@
 .dropdown{
+    position: absolute;
+    right:1em;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    padding:1.5em;
+    border-radius: 10px;
+    
+    .link{
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .link:hover{
+        font-weight: 600;
+    }
 }
