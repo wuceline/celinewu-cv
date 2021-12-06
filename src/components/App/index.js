@@ -1,5 +1,5 @@
 // == Import
-import DropdownMain from '../DropdownMain';
+import Navbar from 'src/containers/Navbar';
 import Presentation from '../Presentation';
 import AboutMe from '../AboutMe';
 import Technologies from '../Technologies';
@@ -10,7 +10,7 @@ import './styles.scss';
 // == Composant
 const App = () => (
   <div className="app">
-    <DropdownMain />
+    <Navbar />
     <Presentation />
     <AboutMe />
     <Technologies />

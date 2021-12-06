@@ -4,7 +4,7 @@ const projects = [
     title: 'Keskonmate',
     description:
         'Tracking website for TV series.',
-    buttonText: 'View website',
+    buttonText: 'View',
     date: 'November 2021',
     icon: 'computer',
   },
@@ -13,7 +13,7 @@ const projects = [
     title: 'Keskonmate',
     description:
         'Tracking website for TV series.',
-    buttonText: 'View website',
+    buttonText: 'View',
     date: 'November 2021',
     icon: 'computer',
   },
