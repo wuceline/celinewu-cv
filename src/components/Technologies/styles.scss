@@ -1,0 +1,18 @@
+@use 'src/styles/vars';
+
+.technologies{
+    margin:10em 0 10em;
+    .title{
+        font-family: vars.$Syncopate;
+        text-align: left;
+        margin: 3em 0 10em 2em;
+        font-size: 1em;
+        text-decoration: underline;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+    }
+}
