@@ -21,8 +21,7 @@ const AboutMe = () => (
     <p className="text">
       In 2021, I seeked support from a professionnal retraining coach. It was time to challenge
       myself, to learn new things and develop myself.
-      I started a Full stack web and web mobile developper training with
-      <a href="https://oclock.io/formations/developpeur-web#programme" className="link"> O'clock. </a>
+      I started a Full stack web and web mobile developper training with <a href="https://oclock.io/formations/developpeur-web#programme" target="_blank" className="link" rel="noreferrer"> O'clock</a>. 
       I had no technical knowledge in web development but was fully convinced that I am made for it.
       During 3 months we learned to use <span>HTML/CSS</span>,
       <span>PHP</span> and <span>mySQL</span>, <span>JavaScript</span> and the <span>OOP</span>
@@ -34,9 +33,7 @@ const AboutMe = () => (
     <p className="text">
       Our project, to conclude the training, was conceived with a team of 5 during a month.
       We worked together daily during 4 sprints.
-      You can find our presentation
-      <a href="https://www.youtube.com/watch?v=kHnBAk1Bwrg&t=896s" className="link"> here </a>
-      from 6min15 to 22min10.
+      You can find our presentation <a href="https://www.youtube.com/watch?v=kHnBAk1Bwrg&t=375s" target="_blank" className="link" rel="noreferrer">here</a> from 6min15 to 22min10.
     </p>
     <p className="text conclusion">
       I've learned a lot during this past year as a Full stack web developper and I'm still
