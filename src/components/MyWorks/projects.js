@@ -7,15 +7,17 @@ const projects = [
     buttonText: 'View',
     date: 'November 2021',
     icon: 'computer',
+    url:'http://keskonmate.surge.sh/'
   },
   {
     id: 2,
-    title: 'Keskonmate',
+    title: 'Portfolio',
     description:
-        'Tracking website for TV series.',
+        'My portfolio',
     buttonText: 'View',
-    date: 'November 2021',
+    date: 'December 2021',
     icon: 'computer',
+    url:'/'
   },
 ];
 
