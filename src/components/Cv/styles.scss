@@ -1,0 +1,31 @@
+.cv{
+    width: 100%;
+    .back-link{
+        position: fixed;
+        background-color: rgba(0,0,0,0.25);
+        color:#fff;
+        padding:0.5em;
+        border-radius: 8px;
+        top:1em;
+        right:1em;
+        font-size: 0.8em;
+        transition: 0.5s;
+
+        @media only screen and (min-width:768px){
+            font-size: 1.1em;
+            top:3em;
+            right:5em;
+        }
+    }
+    .back-link:hover{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .cv-img{
+        display: block;
+        margin: auto;
+        width:100%;
+        @media only screen and (min-width:768px){
+            width:60%;
+        }
+    }  
+}

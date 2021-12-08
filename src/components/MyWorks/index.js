@@ -21,7 +21,7 @@ const MyWorks = () => (
           <p id="description">
             {element.description}
           </p>
-          <a href="/" className="button">
+          <a href={element.url} className="button" target="_blank" rel="noreferrer">
             {element.buttonText}
           </a>
         </VerticalTimelineElement>
