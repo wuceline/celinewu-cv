@@ -31,11 +31,18 @@
     .conclusion{
         font-weight: 500;
     }
-    .cv-link{
-        display: block;
+    a.cv-link{
         font-family: vars.$Syncopate;
-        text-align: right;
         text-decoration: underline;
-        margin: 2em 2em 8em 0;
+        padding:0.8em;
+        position: absolute;
+        right:10em;
+    }
+    .cv-link:hover{
+        background-color: rgba(0,0,0,0.25);
+        padding:0.8em;
+        border-radius: 8px;
+        color:#fff;
+        text-decoration: none;
     }
 }
