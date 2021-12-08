@@ -25,5 +25,11 @@
         .icon{
             margin:1em;
         }
+        .socialMedia-links{
+            transition: 0.5s;
+        }
+        .socialMedia-links:hover{
+            color: rgba(0,0,0,0.5)
+        }
     }
 }

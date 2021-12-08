@@ -7,6 +7,7 @@
     color:#fff;
     padding:1.5em;
     border-radius: 10px;
+    line-height: 1.2em;
     
     .dropdown-open{
         display: block;
@@ -17,6 +18,7 @@
     .link{
         font-size: 1.2em;
         line-height: 1.5em;
+        transition: 0.5s;
     }
     .link:hover{
         font-weight: 600;
