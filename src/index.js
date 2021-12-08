@@ -11,7 +11,7 @@ import App from 'src/components/App';
 //    => crée une structure d'objets imbriqués (DOM virtuel)
 const rootReactElement = (
   <Provider store={store}>
-    <App />;
+    <App />
   </Provider>
 );
 // 2. La cible du DOM (là où la structure doit prendre vie dans le DOM)
