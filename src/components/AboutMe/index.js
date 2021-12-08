@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './styles.scss';
 
 const AboutMe = () => (
@@ -21,7 +23,7 @@ const AboutMe = () => (
     <p className="text">
       In 2021, I seeked support from a professionnal retraining coach. It was time to challenge
       myself, to learn new things and develop myself.
-      I started a Full stack web and web mobile developper training with <a href="https://oclock.io/formations/developpeur-web#programme" target="_blank" className="link" rel="noreferrer"> O'clock</a>. 
+      I started a Full stack web and web mobile developper training with <a href="https://oclock.io/formations/developpeur-web#programme" target="_blank" className="link" rel="noreferrer"> O'clock</a>.
       I had no technical knowledge in web development but was fully convinced that I am made for it.
       During 3 months we learned to use <span>HTML/CSS</span>,
       <span>PHP</span> and <span>mySQL</span>, <span>JavaScript</span> and the <span>OOP</span>
@@ -39,9 +41,9 @@ const AboutMe = () => (
       I've learned a lot during this past year as a Full stack web developper and I'm still
       eager to learn the ocean of knowledge that lays ahead.
     </p>
-    <a href="/" className="cv-link">
+    <Link to="/cv" className="cv-link">
       My CV
-    </a>
+    </Link>
   </div>
 );
 

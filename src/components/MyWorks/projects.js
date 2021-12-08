@@ -7,7 +7,7 @@ const projects = [
     buttonText: 'View',
     date: 'November 2021',
     icon: 'computer',
-    url:'http://keskonmate.surge.sh/'
+    url: 'http://keskonmate.surge.sh/',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     buttonText: 'View',
     date: 'December 2021',
     icon: 'computer',
-    url:'/'
+    url: '/',
   },
 ];
 
