@@ -11,9 +11,9 @@ const Form = () => {
 
     emailjs.sendForm('service_he1oy6b', 'template_ktw2prc', e.target, 'user_L4p8ZswuAco9WTqSlokB7')
       .then((result) => {
-        console.log(result.text);
+        // console.log(result.text);
       }, (error) => {
-        console.log(error.text);
+        // console.log(error.text);
       });
     e.target.reset();
   };
@@ -36,11 +36,13 @@ const Form = () => {
         Email
         <input type="email" name="email" id="email" />
       </label>
-      <label htmlFor="message" className="label">
-        Message
-        <textarea name="message" id="message" />
+      <label htmlFor="message" className="message-label">
+        Your message
+        <textarea name="message" id="message" cols="50" rows="30" maxLength={800} />
       </label>
-      <input type="submit" value="Send" />
+      <button type="submit" className="button">
+        Send
+      </button>
     </form>
   );
 };
