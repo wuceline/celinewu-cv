@@ -1,6 +1,8 @@
+import Form from './Form';
+
 const Contact = () => (
   <div className="contact">
-    Contact
+    <Form />
   </div>
 );
 

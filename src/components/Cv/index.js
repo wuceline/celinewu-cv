@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './styles.scss';
-import CvJpg from 'src/assets/cv.jpg';
+import CvJpg from 'src/assets/celinewu-cv-dec21.jpg';
 
 const Cv = () => (
   <div className="cv">
