@@ -39,6 +39,7 @@
         position: absolute;
         right:10em;
         transition: 0.5s;
+        animation: cvLink 1s ease-in-out;
     }
     .cv-link:hover{
         background-color: rgba(0,0,0,0.25);
@@ -46,5 +47,13 @@
         border-radius: 8px;
         color:#fff;
         text-decoration: none;
+    }
+}
+
+@keyframes cvLink {
+    from {
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0);
     }
 }
