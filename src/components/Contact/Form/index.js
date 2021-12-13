@@ -1,71 +1,65 @@
 import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import './styles.scss';
 
-const Form = ({
-  setName,
-  setEmail,
-  setMessage,
-}) => {
+const Form = () => {
   const form = useRef();
+
+  const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const failMessage = () => {
+    const formMessage = document.querySelector('.form-message');
+    formMessage.innerHTML = 'Please provide required information *';
+  };
+
+  const successMessage = () => {
+    const formMessage = document.querySelector('.form-message');
+    formMessage.innerHTML = 'Your message has been sent';
+    formMessage.style.color = '#57945e';
+  };
+
+  const sendFeedback = (serviceId, templateId, formUsed, userId, variables) => {
+    emailjs.sendForm(serviceId, templateId, form.current, userId, variables)
+      .then((result) => {
+        successMessage();
+        setName('');
+        setCompany('');
+        setPhone('');
+        setEmail('');
+        setMessage('');
+      }, (error) => {
+        const formMessage = document.querySelector('.form-message');
+        formMessage.innerHTML = 'There was an error, please try again';
+      });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_he1oy6b', 'template_ktw2prc', e.target, 'user_L4p8ZswuAco9WTqSlokB7')
-      .then((result) => {
-        // console.log(result);
-      }, (error) => {
-        // console.log(error.text);
+    if (name && email && message) {
+      sendFeedback('service_he1oy6b', 'template_ktw2prc', form.current, 'user_L4p8ZswuAco9WTqSlokB7', {
+        name,
+        company,
+        phone,
+        email,
+        message,
       });
-    e.target.reset();
+    }
+    else {
+      failMessage();
+    }
   };
-
-  const [nameError, setNameError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [messageError, setMessageError] = useState('');
-
-  const validate = () => {
-    const nameError = '';
-    let emailError = '';
-    let messageError = '';
-
-    if (!this.state.name) {
-      setNameError = 'Please enter a name';
-    }
-    if (!this.state.email.includes('@')) {
-      emailError = 'Please enter a valid email';
-    }
-    if (!this.state.message) {
-      messageError = 'Please write a message';
-    }
-    if (!this.state.message.length > 1000) {
-      messageError = 'Sorry, the message is too long, 1000 characters maximum';
-    }
-    if (nameError || emailError || messageError) {
-      this.setState({ nameError, emailError, messageError });
-      return false;
-    }
-
-    return true;
-  };
-
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const isValid = this.validate();
-  //   if (isValid) {
-  //     console.log(this.state);
-  //     // clear form
-  //     this.setState(initialState);
-  //   }
-  // };
 
   return (
     <form ref={form} onSubmit={sendEmail} className="form">
       <label htmlFor="name" className="label">
-        Name
+        Name *
         <input
           type="text"
           name="name"
@@ -73,18 +67,38 @@ const Form = ({
           onChange={(event) => {
             setName(event.target.value);
           }}
+          value={name}
         />
       </label>
+
       <label htmlFor="company" className="label">
         Company
-        <input type="text" name="company" id="company" />
+        <input
+          type="text"
+          name="company"
+          id="company"
+          onChange={(event) => {
+            setCompany(event.target.value);
+          }}
+          value={company}
+        />
       </label>
+
       <label htmlFor="phone" className="label">
         Phone
-        <input type="text" name="phone" id="phone" />
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          onChange={(event) => {
+            setPhone(event.target.value);
+          }}
+          value={phone}
+        />
       </label>
+
       <label htmlFor="email" className="label">
-        Email
+        Email *
         <input
           type="email"
           name="email"
@@ -92,10 +106,12 @@ const Form = ({
           onChange={(event) => {
             setEmail(event.target.value);
           }}
+          value={email}
         />
       </label>
+
       <label htmlFor="message" className="message-label">
-        Your message
+        Your message *
         <textarea
           name="message"
           id="message"
@@ -104,19 +120,21 @@ const Form = ({
           onChange={(event) => {
             setMessage(event.target.value);
           }}
+          value={message}
         />
       </label>
-      <button type="submit" className="button">
+
+      <div className="form-message"> </div>
+
+      <button
+        type="submit"
+        className="button"
+      >
         Send
       </button>
+
     </form>
   );
-};
-
-Form.propTypes = {
-  setName: PropTypes.func.isRequired,
-  setEmail: PropTypes.func.isRequired,
-  setMessage: PropTypes.func.isRequired,
 };
 
 export default Form;
