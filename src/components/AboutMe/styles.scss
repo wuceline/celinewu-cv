@@ -1,0 +1,59 @@
+@use 'src/styles/vars';
+
+.about-me{
+    text-align: center;
+    margin-bottom: 10em;
+    padding-top:5em;
+    .title{
+        font-family: vars.$Syncopate;
+        text-align: left;
+        margin: 3em 0 2em 2em;
+        font-size: 1em;
+        text-decoration: underline;
+    }
+    .text{
+        padding: 1em;
+        line-height: 1.3em;
+        @media only screen and (min-width:1024px){
+            width:70%;
+            margin:auto;
+        }
+        .link{
+            font-weight: 600;
+            transition: 0.5s;
+        }
+        .link:hover{
+            color: rgba(0,0,0,0.25)
+        }
+        span{
+            text-decoration: underline;
+        }
+    }
+    .conclusion{
+        font-weight: 500;
+    }
+    a.cv-link{
+        font-family: vars.$Syncopate;
+        text-decoration: underline;
+        padding:0.8em;
+        position: absolute;
+        right:10em;
+        transition: 0.5s;
+        animation: cvLink 1s ease-in-out;
+    }
+    .cv-link:hover{
+        background-color: rgba(0,0,0,0.25);
+        padding:0.8em;
+        border-radius: 8px;
+        color:#fff;
+        text-decoration: none;
+    }
+}
+
+@keyframes cvLink {
+    from {
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0);
+    }
+}

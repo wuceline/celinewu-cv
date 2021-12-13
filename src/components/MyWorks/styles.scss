@@ -1,0 +1,43 @@
+@use 'src/styles/vars';
+
+.my-works{
+    margin-bottom: 10em;
+    padding-top:5em;
+    .title{
+        font-family: vars.$Syncopate;
+        text-align: left;
+        margin: 3em 0 3em 2em;
+        font-size: 1em;
+        text-decoration: underline;
+    }
+
+    .vertical-timeline-element-title{
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+    .vertical-timeline-element-content {
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+          0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+        padding: 2em 3em !important;
+      }
+
+    .date{
+        color:rgba(0, 0, 0, 0.50)
+    }
+    #description{
+        padding-bottom: 1.5em;
+    }
+    .button{
+        font-size: 1em;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.25);
+        margin-left: 1em;
+        transition: 0.5s;
+    }
+    .button:hover{
+        background-color: rgba(0,0,0, 0.35);
+    }
+}

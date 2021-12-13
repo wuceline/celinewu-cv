@@ -1,0 +1,53 @@
+@use 'src/styles/vars';
+
+.presentation{
+    width: 100%;
+    text-align: center;
+    font-family: vars.$QuickSand;
+    font-size: 1em;
+    margin-bottom: 8em;
+
+    @media only screen and (min-width:768px){
+        font-size: 1.2em;
+    }
+    @media only screen and (min-width:1024px){
+        font-size: 1.4em;
+    }
+
+    .name{
+        padding: 3em 0 1em;
+        font-size: 3em;
+        animation: name 2s ease-in-out;
+    }
+    .title{
+        padding: 0 0 2em 6em;
+        animation: title 2s ease-in-out;
+    }
+
+    .socialMedia-icons{
+        .icon{
+            margin:1em;
+        }
+        .socialMedia-links{
+            transition: 0.5s;
+        }
+        .socialMedia-links:hover{
+            color: rgba(0,0,0,0.5)
+        }
+    }
+}
+
+@keyframes name {
+    from {
+        transform: translateX(50%);
+    }to{
+        transform: translateX(0);
+    }
+}
+@keyframes title {
+    from {
+        transform: translateX(-50%);
+    }to{
+        transform: translateX(0);
+    }
+}
