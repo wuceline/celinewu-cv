@@ -1,4 +1,4 @@
-import Form from 'src/containers/Contact/Form';
+import Form from './Form';
 import './styles.scss';
 
 const Contact = () => (

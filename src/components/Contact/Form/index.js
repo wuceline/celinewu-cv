@@ -115,7 +115,7 @@ const Form = () => {
         <textarea
           name="message"
           id="message"
-          cols="50"
+          cols="45"
           rows="30"
           onChange={(event) => {
             setMessage(event.target.value);
