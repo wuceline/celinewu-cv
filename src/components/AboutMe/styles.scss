@@ -2,8 +2,7 @@
 
 .about-me{
     text-align: justify;
-    margin-bottom: 10em;
-    padding-top:5em;
+    min-height: 100vh;
     .text{
         padding: 1em;
         line-height: 1.7em;
@@ -25,7 +24,7 @@
         }
     }
     .conclusion{
-        font-weight: 500;
+        font-weight: vars.$mediumWeight;
     }
     .cv{
         width: 100%;
