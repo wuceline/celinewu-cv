@@ -2,7 +2,7 @@
 .form{
     display: flex;
     width:90%;
-    margin:auto;
+    margin: 5em auto 1em;
     flex-direction: column;
     line-height: 2em;
     @media only screen and (min-width:768px){
@@ -15,9 +15,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.5em;
+        height: 2em;
         input{
             font-family: vars.$QuickSand;
-            border:solid 1px rgba(0,0,0,0.25);
+            border:solid 1px vars.$fontColor;
             border-radius: 5px;
             padding:0.5em;
             @media only screen and (min-width:768px){
@@ -26,23 +27,26 @@
         }
         input:focus{
             font-weight: 600;
+            border: solid 2px vars.$fontColor;
         }
     }
     .message-label{
         align-self: center;
-        textarea{
+        width:100%;
+        #message{
             display: block;
-            height:10em;
             outline: none;
             font-family: vars.$QuickSand;
-            border:solid 1px rgba(0,0,0,0.25);
+            border:solid 1px vars.$fontColor;
             border-radius: 5px;
             padding:0.5em;
-
+            width: 100%;
+            height: 15em;
             resize: none;
         }
-        textarea:focus{
+        #message:focus{
             font-weight: 600;
+            border: solid 2px vars.$fontColor;
         }
     }
     .button{
