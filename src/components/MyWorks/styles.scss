@@ -7,6 +7,11 @@
     @media only screen and (min-width:768px){
         width: 100%;
     }
+    @media only screen and (min-width:1024px){
+        .categories-title{
+            margin-bottom:5em;
+        }
+    }
 
     .vertical-timeline-element-title{
         font-weight: 600;
