@@ -4,7 +4,7 @@ import './styles.scss';
 
 const AboutMe = () => (
   <div className="about-me">
-    <h1 className="title">About me</h1>
+    <h1 className="categories-title">About me</h1>
     <p className="text">
       I have worked in the luxury goods sales area for 6 years, at various positions, from
       a Sales Associate to a Supervisor, to an Assistant Manager. From those few years, I have
