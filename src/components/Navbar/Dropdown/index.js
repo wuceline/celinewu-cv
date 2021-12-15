@@ -9,6 +9,8 @@ const Dropdown = ({ toggleDropdown }) => (
       smooth
       duration={1000}
       className="link"
+      activeClass="active"
+      spy
       onClick={() => {
         toggleDropdown();
       }}
@@ -20,6 +22,8 @@ const Dropdown = ({ toggleDropdown }) => (
       smooth
       duration={1000}
       className="link"
+      activeClass="active"
+      spy
       onClick={() => {
         toggleDropdown();
       }}
@@ -31,6 +35,8 @@ const Dropdown = ({ toggleDropdown }) => (
       smooth
       duration={1000}
       className="link"
+      activeClass="active"
+      spy
       onClick={() => {
         toggleDropdown();
       }}
@@ -42,6 +48,8 @@ const Dropdown = ({ toggleDropdown }) => (
       smooth
       duration={1000}
       className="link"
+      activeClass="active"
+      spy
       onClick={() => {
         toggleDropdown();
       }}
@@ -53,6 +61,8 @@ const Dropdown = ({ toggleDropdown }) => (
       smooth
       duration={1000}
       className="link"
+      activeClass="active"
+      spy
       onClick={() => {
         toggleDropdown();
       }}
