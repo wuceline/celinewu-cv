@@ -8,13 +8,15 @@ const Navbar = ({
   toggleDropdown,
 }) => (
   <div className="navbar">
-    <Menu
-      size={40}
-      className="icon"
-      onClick={() => {
-        toggleDropdown();
-      }}
-    />
+    <p>
+      <Menu
+        size={30}
+        className="icon"
+        onClick={() => {
+          toggleDropdown();
+        }}
+      />
+    </p>
     {showDropdown && (
     <Dropdown />
     )}

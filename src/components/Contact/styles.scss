@@ -1,6 +1,8 @@
 @use 'src/styles/vars';
 .contact{
     min-height: 100vh;
+    width: 90%;
+    margin:auto;
     .text{
         margin: 2em 0 3em;
         text-align: center;

@@ -1,8 +1,23 @@
+@use 'src/styles/vars';
+
 .navbar{
     position:fixed;
     z-index: 2;
     right: 1em;
     top: 1em;
+    .icon{
+        color: vars.$fontColor;
+        width:30px;
+        height:30px;
+        @media only screen and (min-width:768px) {
+            width:40px;
+            height:40px;
+        }
+        @media only screen and (min-width:1024) {
+            width:45px;
+            height:45px;
+        }
+    }
     .dropdown-open{
         display: block;
     }
