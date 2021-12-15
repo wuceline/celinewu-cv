@@ -6,7 +6,7 @@ import './styles.scss';
 
 const MyWorks = () => (
   <div className="my-works">
-    <h1 className="title">My works</h1>
+    <h1 className="categories-title">My works</h1>
     <VerticalTimeline>
       {projects.map((element) => (
         <VerticalTimelineElement

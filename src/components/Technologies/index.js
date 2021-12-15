@@ -2,7 +2,7 @@ import './styles.scss';
 
 const Technologies = () => (
   <div className="technologies">
-    <h1 className="title">Technologies</h1>
+    <h1 className="categories-title">Technologies</h1>
     <div className="icons">
       <img src="https://img.icons8.com/material-rounded/90/000000/html-5.png" alt="html5" />
       <img src="https://img.icons8.com/ios-glyphs/90/000000/css3.png" alt="css3" />

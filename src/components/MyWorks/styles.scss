@@ -1,14 +1,11 @@
 @use 'src/styles/vars';
 
 .my-works{
-    margin-bottom: 10em;
-    padding-top:5em;
-    .title{
-        font-family: vars.$Syncopate;
-        text-align: left;
-        margin: 3em 0 3em 2em;
-        font-size: 1em;
-        text-decoration: underline;
+    min-height: 100vh;
+    width: 90%;
+    margin:auto;
+    @media only screen and (min-width:768px){
+        width: 100%;
     }
 
     .vertical-timeline-element-title{
