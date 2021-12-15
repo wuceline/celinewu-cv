@@ -26,8 +26,8 @@ const AboutMe = () => (
       I started a Full stack web and web mobile developper training with <a href="https://oclock.io/formations/developpeur-web#programme" target="_blank" className="link" rel="noreferrer"> O'clock</a>.
       I had no technical knowledge in web development but was fully convinced that I am made for it.
       During 3 months we learned to use <span>HTML/CSS</span>,
-      <span>PHP</span> and <span>mySQL</span>, <span>JavaScript</span> and the <span>OOP</span>
-      while manipulating <span>Git</span> with <span>GitHub</span>.
+      <span>PHP</span> and <span>mySQL</span>, <span>JavaScript</span> and
+      the <span>OOP</span> while manipulating <span>Git</span> with <span>GitHub</span>.
       We also had a glimpse of the power that
       a <span>CMS</span> like <span>Wordpress</span> could offer.
       I have then specialized myself in <span>React</span> for a month.
@@ -41,9 +41,11 @@ const AboutMe = () => (
       I've learned a lot during this past year as a Full stack web developper and I'm still
       eager to learn the ocean of knowledge that lays ahead.
     </p>
-    <Link to="/cv" className="cv-link">
-      My CV
-    </Link>
+    <div className="cv">
+      <Link to="/cv" className="cv-link">
+        MY CV
+      </Link>
+    </div>
   </div>
 );
 

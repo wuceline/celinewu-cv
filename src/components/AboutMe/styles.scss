@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .about-me{
-    text-align: center;
+    text-align: justify;
     margin-bottom: 10em;
     padding-top:5em;
     .title{
@@ -13,9 +13,11 @@
     }
     .text{
         padding: 1em;
-        line-height: 1.3em;
-        @media only screen and (min-width:1024px){
-            width:70%;
+        line-height: 1.7em;
+        width:90%;
+        margin:auto;
+        @media only screen and (min-width:768px){
+            width:60%;
             margin:auto;
         }
         .link{
@@ -32,21 +34,25 @@
     .conclusion{
         font-weight: 500;
     }
-    a.cv-link{
-        font-family: vars.$Syncopate;
-        text-decoration: underline;
-        padding:0.8em;
-        position: absolute;
-        right:10em;
-        transition: 0.5s;
-        animation: cvLink 1s ease-in-out;
-    }
-    .cv-link:hover{
-        background-color: rgba(0,0,0,0.25);
-        padding:0.8em;
-        border-radius: 8px;
-        color:#fff;
-        text-decoration: none;
+    .cv{
+        width: 100%;
+        text-align: center;
+        a.cv-link{
+            font-family: vars.$QuickSand;
+            font-weight: vars.$bold;
+            font-size: 1.5em;
+            text-decoration: underline;
+            padding:0.8em;
+            transition: 0.5s;
+            animation: cvLink 1s ease-in-out;
+        }
+        .cv-link:hover{
+            background-color: rgba(0,0,0,0.25);
+            padding:0.8em;
+            border-radius: 8px;
+            color:#fff;
+            text-decoration: none;
+        }
     }
 }
 
