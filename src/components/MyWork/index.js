@@ -5,8 +5,8 @@ import projects from './projects';
 import './styles.scss';
 
 const MyWorks = () => (
-  <div className="my-works">
-    <h1 className="categories-title">My works</h1>
+  <div className="my-work">
+    <h1 className="categories-title">My work</h1>
     <VerticalTimeline>
       {projects.map((element) => (
         <VerticalTimelineElement

@@ -2,7 +2,7 @@ import Navbar from 'src/containers/Navbar';
 import Presentation from '../Presentation';
 import AboutMe from '../AboutMe';
 import Technologies from '../Technologies';
-import MyWorks from '../MyWorks';
+import MyWork from '../MyWork';
 import Contact from '../Contact';
 
 const Home = () => (
@@ -11,7 +11,7 @@ const Home = () => (
     <Navbar />
     <AboutMe />
     <Technologies />
-    <MyWorks />
+    <MyWork />
     <Contact />
   </div>
 );
