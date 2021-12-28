@@ -44,7 +44,7 @@ const Dropdown = ({ toggleDropdown }) => (
       Technologies
     </Link>
     <Link
-      to="my-works"
+      to="my-work"
       smooth
       duration={1000}
       className="link"
@@ -54,7 +54,7 @@ const Dropdown = ({ toggleDropdown }) => (
         toggleDropdown();
       }}
     >
-      My works
+      My work
     </Link>
     <Link
       to="contact"
